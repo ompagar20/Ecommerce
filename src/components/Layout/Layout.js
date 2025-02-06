@@ -2,6 +2,7 @@ import React from 'react';
 import './Layout.css';
 import LogoutButton from '../Login/LogoutButton'; 
 import { PiShoppingCartSimpleBold } from 'react-icons/pi'; 
+import { AiOutlineSearch } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 
 const Layout = ({ children, searchTerm, setSearchTerm, onAddItem }) => {
@@ -10,14 +11,19 @@ const Layout = ({ children, searchTerm, setSearchTerm, onAddItem }) => {
   return (
     <div className="layout">
       <nav className="navbar">
-        <h1>MyEcommerce</h1>
-        <input
-          type="text"
-          placeholder="Search products..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="search-input"
-        />
+        <h1>Om-Ecommerce</h1>
+
+        <div className="search-box">
+          <AiOutlineSearch className="search-icon" />
+          <input
+            type="text"
+            placeholder="Search products..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="search-input"
+          />
+        </div>
+
         <div className="nav-actions">
           <button 
             className="cart-btn"

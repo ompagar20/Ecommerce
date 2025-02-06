@@ -1,0 +1,56 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+}
+
+.navbar h1 {
+  margin: 0;
+  color: white;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.add-item-btn {
+  padding: 0.5rem 1rem;
+  background: #546cf7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; 
+}
+
+.cart-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px; 
+}
+
+.logout-btn {
+  padding: 0.5rem 1rem;
+  background: #f54242;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
